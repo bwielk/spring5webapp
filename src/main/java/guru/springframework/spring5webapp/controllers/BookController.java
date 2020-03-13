@@ -17,6 +17,6 @@ public class BookController {
     @RequestMapping(path = "/books")
     public String getBooks(Model model){
         model.addAttribute("books",  bookRepository.findAll());
-        return "resources/templates/books/list";
+        return "books/list";
     }
 }
